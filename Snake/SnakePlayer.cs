@@ -190,7 +190,7 @@ namespace Snake
         /// <param name="canvas">The graphics object to render on</param>
         public void Draw(Graphics canvas)
         {
-            Brush SnakeColor = Brushes.Black;
+            Brush SnakeColor = Brushes.BlueViolet;
             List<Rectangle> Rects = GetRects(); // Get the snake body parts, represented as rectangles
             foreach(Rectangle Part in Rects) // Draw each snake body part
             {

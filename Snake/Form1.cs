@@ -92,19 +92,19 @@ namespace Snake
 
         private void SetPlayerMovement()
         {
-            if (Input.IsKeyDown(Keys.Left))
+            if (Input.IsKeyDown(Keys.A))
             {
                 Player1.SetDirection(Direction.left);
             }
-            else if (Input.IsKeyDown(Keys.Right))
+            else if (Input.IsKeyDown(Keys.D))
             {
                 Player1.SetDirection(Direction.right);
             }
-            else if (Input.IsKeyDown(Keys.Up))
+            else if (Input.IsKeyDown(Keys.W))
             {
                 Player1.SetDirection(Direction.up);
             }
-            else if (Input.IsKeyDown(Keys.Down))
+            else if (Input.IsKeyDown(Keys.S))
             {
                 Player1.SetDirection(Direction.down);
             }
@@ -145,6 +145,78 @@ namespace Snake
                 default:
                     break;
             }
+        }
+
+        private void GameCanvas_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+        public void playcolor()
+        {
+
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            GameCanvas.BackColor = Color.White;
+            
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            GameCanvas.BackColor = Color.Black;
+            
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            GameCanvas.BackColor = Color.White;
+           
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            GameCanvas.BackColor = Color.Red;
+        }
+
+        private void ScoreTxtBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ออกจากเกมสToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ออกจากเกมสToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Console.WriteLine("ddd");
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
