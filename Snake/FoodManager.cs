@@ -36,7 +36,7 @@ namespace Snake
         public void Draw(Graphics Canvas)
         {
             // Iterate over all food pellets and draw them
-            Brush SnakeColor = Brushes.BlueViolet;
+            Brush SnakeColor = Brushes.Black;
             foreach (FoodPellet Pellet in m_FoodPellets)
             {
                 Point PartPos = Pellet.GetPosition();
