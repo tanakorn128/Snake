@@ -41,11 +41,13 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ออกจากเกมสToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ออกจากเกมสToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ระดบ1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ระดบ2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ระดบ3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ออกจากเกมสToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.GameCanvas)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -89,7 +91,7 @@
             // ScoreTxtBox
             // 
             this.ScoreTxtBox.Enabled = false;
-            this.ScoreTxtBox.Location = new System.Drawing.Point(598, 45);
+            this.ScoreTxtBox.Location = new System.Drawing.Point(602, 82);
             this.ScoreTxtBox.Name = "ScoreTxtBox";
             this.ScoreTxtBox.ReadOnly = true;
             this.ScoreTxtBox.Size = new System.Drawing.Size(161, 20);
@@ -99,7 +101,7 @@
             // ScoreLbl
             // 
             this.ScoreLbl.AutoSize = true;
-            this.ScoreLbl.Location = new System.Drawing.Point(554, 48);
+            this.ScoreLbl.Location = new System.Drawing.Point(558, 85);
             this.ScoreLbl.Name = "ScoreLbl";
             this.ScoreLbl.Size = new System.Drawing.Size(38, 13);
             this.ScoreLbl.TabIndex = 4;
@@ -108,7 +110,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(550, 87);
+            this.label1.Location = new System.Drawing.Point(554, 124);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 7;
@@ -117,7 +119,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(598, 87);
+            this.radioButton1.Location = new System.Drawing.Point(602, 124);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(37, 17);
             this.radioButton1.TabIndex = 9;
@@ -129,7 +131,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(598, 110);
+            this.radioButton2.Location = new System.Drawing.Point(602, 147);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(42, 17);
             this.radioButton2.TabIndex = 10;
@@ -141,7 +143,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(598, 133);
+            this.radioButton3.Location = new System.Drawing.Point(602, 170);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(45, 17);
             this.radioButton3.TabIndex = 11;
@@ -160,6 +162,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(771, 24);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // ออกจากเกมสToolStripMenuItem
             // 
@@ -172,6 +175,24 @@
             this.ออกจากเกมสToolStripMenuItem.Text = "ความเร็ว";
             this.ออกจากเกมสToolStripMenuItem.Click += new System.EventHandler(this.ออกจากเกมสToolStripMenuItem_Click);
             // 
+            // ระดบ1ToolStripMenuItem
+            // 
+            this.ระดบ1ToolStripMenuItem.Name = "ระดบ1ToolStripMenuItem";
+            this.ระดบ1ToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.ระดบ1ToolStripMenuItem.Text = "ระดับ1";
+            // 
+            // ระดบ2ToolStripMenuItem
+            // 
+            this.ระดบ2ToolStripMenuItem.Name = "ระดบ2ToolStripMenuItem";
+            this.ระดบ2ToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.ระดบ2ToolStripMenuItem.Text = "ระดับ2";
+            // 
+            // ระดบ3ToolStripMenuItem
+            // 
+            this.ระดบ3ToolStripMenuItem.Name = "ระดบ3ToolStripMenuItem";
+            this.ระดบ3ToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.ระดบ3ToolStripMenuItem.Text = "ระดับ3";
+            // 
             // ออกจากเกมสToolStripMenuItem1
             // 
             this.ออกจากเกมสToolStripMenuItem1.Name = "ออกจากเกมสToolStripMenuItem1";
@@ -179,39 +200,40 @@
             this.ออกจากเกมสToolStripMenuItem1.Text = "ออกจากเกมส์";
             this.ออกจากเกมสToolStripMenuItem1.Click += new System.EventHandler(this.ออกจากเกมสToolStripMenuItem1_Click);
             // 
-            // ระดบ1ToolStripMenuItem
-            // 
-            this.ระดบ1ToolStripMenuItem.Name = "ระดบ1ToolStripMenuItem";
-            this.ระดบ1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ระดบ1ToolStripMenuItem.Text = "ระดับ1";
-            // 
-            // ระดบ2ToolStripMenuItem
-            // 
-            this.ระดบ2ToolStripMenuItem.Name = "ระดบ2ToolStripMenuItem";
-            this.ระดบ2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ระดบ2ToolStripMenuItem.Text = "ระดับ2";
-            // 
-            // ระดบ3ToolStripMenuItem
-            // 
-            this.ระดบ3ToolStripMenuItem.Name = "ระดบ3ToolStripMenuItem";
-            this.ระดบ3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ระดบ3ToolStripMenuItem.Text = "ระดับ3";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(572, 177);
+            this.label2.Location = new System.Drawing.Point(576, 214);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(165, 13);
             this.label2.TabIndex = 13;
             this.label2.Text = "วิธีการเล่น W ขึ้น Sลง Aซ้าย Dขวา";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(558, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Name:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(602, 45);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(161, 20);
+            this.textBox1.TabIndex = 16;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_2);
+            // 
             // SnakeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 593);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
@@ -225,6 +247,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "SnakeForm";
             this.Text = "Snake";
+            this.Load += new System.EventHandler(this.SnakeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GameCanvas)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -252,6 +275,8 @@
         private System.Windows.Forms.ToolStripMenuItem ระดบ3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ออกจากเกมสToolStripMenuItem1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

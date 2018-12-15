@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake", "Snake\Snake.csproj", "{37B8BDAD-7532-4947-A1DD-4C42340695EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Form2", "Form2\Form2.csproj", "{43528338-566B-4C87-89E0-13957B8114F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{37B8BDAD-7532-4947-A1DD-4C42340695EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37B8BDAD-7532-4947-A1DD-4C42340695EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37B8BDAD-7532-4947-A1DD-4C42340695EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43528338-566B-4C87-89E0-13957B8114F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43528338-566B-4C87-89E0-13957B8114F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43528338-566B-4C87-89E0-13957B8114F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43528338-566B-4C87-89E0-13957B8114F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EAEE408-5724-4792-B495-2C9AE5AAA75C}
 	EndGlobalSection
 EndGlobal

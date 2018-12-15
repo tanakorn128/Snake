@@ -13,6 +13,7 @@ namespace Snake
 {
     public partial class SnakeForm : Form,IMessageFilter
     {
+        string name0;
         SnakePlayer Player1;
         FoodManager FoodMngr;
         Random r = new Random();
@@ -120,7 +121,15 @@ namespace Snake
 
         private void Start_Btn_Click(object sender, EventArgs e)
         {
-            ToggleTimer();
+            
+                DialogResult dialog = MessageBox.Show(name0,name0,MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
+            if (dialog == DialogResult.OK)
+            {
+                ToggleTimer();
+            }
+
+
+                
         }
 
         private void DareBtn_Click(object sender, EventArgs e)
@@ -218,5 +227,51 @@ namespace Snake
         {
 
         }
+
+        private void SnakeForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_2(object sender, EventArgs e)
+        {
+           
+            string name = textBox1.ToString();
+            name n1 = new name(name);
+           
+            name0 = n1.Names;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+
+    public class name
+    {
+        private string name1;
+
+        public name(string value1)
+        {
+            this.name1 = value1;          
+        }
+        public string Names
+        {
+            get { return name1; }
+        }
+
+
+    }
+
 }
